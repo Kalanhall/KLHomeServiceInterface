@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface KLServer (KLHomeService)
 
-- (UIViewController *)fetchHomeController:(NSDictionary *)parameters;
+- (UIViewController *)fetchHomeController:(nullable NSDictionary *)parameters;
 
 @end
 
