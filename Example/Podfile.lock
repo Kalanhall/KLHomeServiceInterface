@@ -1,0 +1,23 @@
+PODS:
+  - KLHomeServiceInterface (0.0.1):
+    - KLServer
+  - KLServer (1.0.0)
+
+DEPENDENCIES:
+  - KLHomeServiceInterface (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - KLServer
+
+EXTERNAL SOURCES:
+  KLHomeServiceInterface:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  KLHomeServiceInterface: 49ef569ef3ed43847883c23adc5603e2bc27212e
+  KLServer: b37b4d567aa189afe1284ed316b4419f2029221e
+
+PODFILE CHECKSUM: 45d56f71ead1476202a25cfe9ba91d2a453bfea6
+
+COCOAPODS: 1.8.3

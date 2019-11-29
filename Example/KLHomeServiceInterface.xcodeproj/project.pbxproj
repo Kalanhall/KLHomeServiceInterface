@@ -39,7 +39,7 @@
 /* Begin PBXFileReference section */
 		207DA1E7310C7FBE4AB04CE9 /* Pods-KLHomeServiceInterface_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KLHomeServiceInterface_Example.debug.xcconfig"; path = "Target Support Files/Pods-KLHomeServiceInterface_Example/Pods-KLHomeServiceInterface_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		290D08A74FD327241D9FE60D /* Pods-KLHomeServiceInterface_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KLHomeServiceInterface_Example.release.xcconfig"; path = "Target Support Files/Pods-KLHomeServiceInterface_Example/Pods-KLHomeServiceInterface_Example.release.xcconfig"; sourceTree = "<group>"; };
-		537433A56942FE43A5AC33B3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		537433A56942FE43A5AC33B3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* KLHomeServiceInterface_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KLHomeServiceInterface_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -63,9 +63,9 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9A876645A65A79A7115DE653 /* Pods_KLHomeServiceInterface_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KLHomeServiceInterface_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFFF8AD86BC99CC6F95FB107 /* Pods-KLHomeServiceInterface_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KLHomeServiceInterface_Tests.release.xcconfig"; path = "Target Support Files/Pods-KLHomeServiceInterface_Tests/Pods-KLHomeServiceInterface_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		CF6BD89030AA0AA54C1EDE97 /* KLHomeServiceInterface.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = KLHomeServiceInterface.podspec; path = ../KLHomeServiceInterface.podspec; sourceTree = "<group>"; };
+		CF6BD89030AA0AA54C1EDE97 /* KLHomeServiceInterface.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = KLHomeServiceInterface.podspec; path = ../KLHomeServiceInterface.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		EAC8AC159029117E8B570F2B /* Pods-KLHomeServiceInterface_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KLHomeServiceInterface_Tests.debug.xcconfig"; path = "Target Support Files/Pods-KLHomeServiceInterface_Tests/Pods-KLHomeServiceInterface_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		EDA50933B0FD4AA0AC91A9B9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		EDA50933B0FD4AA0AC91A9B9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		EFD79A40C5F0694D6DA0B87A /* Pods_KLHomeServiceInterface_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KLHomeServiceInterface_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -193,7 +193,6 @@
 				EAC8AC159029117E8B570F2B /* Pods-KLHomeServiceInterface_Tests.debug.xcconfig */,
 				BFFF8AD86BC99CC6F95FB107 /* Pods-KLHomeServiceInterface_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -303,10 +303,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-KLHomeServiceInterface_Example/Pods-KLHomeServiceInterface_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/KLHomeServiceInterface/KLHomeServiceInterface.framework",
+				"${BUILT_PRODUCTS_DIR}/KLServer/KLServer.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KLHomeServiceInterface.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KLServer.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
